@@ -25,7 +25,7 @@ npm run client
 ## 🌐 URLs
 
 - **App**: http://localhost:3000
-- **API**: http://localhost:5000
+- **API**: http://localhost:8080
 - **New Relic**: https://one.newrelic.com
 - **API Keys**: https://one.newrelic.com/admin-portal/api-keys/home
 
@@ -133,13 +133,13 @@ TIMESERIES
 ```bash
 NEW_RELIC_LICENSE_KEY=your_key_here
 NEW_RELIC_APP_NAME=NewRelic Learning App
-PORT=5000
+PORT=8080
 NODE_ENV=development
 ```
 
 ### Client Environment (client/.env)
 ```bash
-REACT_APP_API_URL=http://localhost:5000
+REACT_APP_API_URL=http://localhost:8080
 ```
 
 ---

@@ -29,7 +29,7 @@ After signing up and logging in:
    ```
    NEW_RELIC_LICENSE_KEY=paste_your_actual_key_here
    NEW_RELIC_APP_NAME=NewRelic Learning App
-   PORT=5000
+   PORT=8080
    NODE_ENV=development
    ```
 
@@ -118,14 +118,14 @@ This means New Relic didn't load properly. Check:
 - Is your license key valid?
 - Try restarting the server
 
-### Port 5000 already in use
+### Port 8080 already in use
 
 ```bash
 # Edit .env and change the port
-PORT=5001
+PORT=8080
 
 # Edit client/.env and update the API URL
-REACT_APP_API_URL=http://localhost:5001
+REACT_APP_API_URL=http://localhost:8080
 ```
 
 ## Next Steps

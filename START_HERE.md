@@ -138,7 +138,7 @@ You will be able to:
    - See SETUP_GUIDE.md troubleshooting section
 
 2. **"Port already in use"**
-   - Change `PORT=5000` to `PORT=5001` in `.env`
+   - Change `PORT=8080` to `PORT=8080` in `.env`
    - Update `REACT_APP_API_URL` in `client/.env`
 
 3. **"Dependencies not installing"**

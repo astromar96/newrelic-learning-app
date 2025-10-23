@@ -289,7 +289,7 @@ SINCE 1 hour ago
   # On Mac: brew install httpd
   
   # Generate 1000 requests with 10 concurrent connections
-  ab -n 1000 -c 10 http://localhost:5000/api/users
+  ab -n 1000 -c 10 http://localhost:8080/api/users
   ```
 
 ---

@@ -11,7 +11,7 @@ const logger = require('./logger');
 const db = require('./database');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT;
 
 // Middleware
 app.use(cors());
@@ -274,7 +274,7 @@ db.init().then(() => {
     logger.info(`\nAvailable endpoints for testing:`);
     logger.info(`  GET  /api/health - Health check`);
     logger.info(`  GET  /api/users - Fast endpoint`);
-    logger.info(`  GET  /api/slow-query - Slow endpoint (add ?delay=5000)`);
+    logger.info(`  GET  /api/slow-query - Slow endpoint (add ?delay=8080)`);
     logger.info(`  GET  /api/memory-intensive - Memory intensive (add ?size=1000000)`);
     logger.info(`  GET  /api/random-error - Random errors`);
     logger.info(`  GET  /api/external-call - External API simulation`);

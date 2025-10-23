@@ -58,7 +58,7 @@ Edit `.env` and add your New Relic license key:
 ```
 NEW_RELIC_LICENSE_KEY=your_actual_license_key_here
 NEW_RELIC_APP_NAME=NewRelic Learning App
-PORT=5000
+PORT=8080
 NODE_ENV=development
 ```
 
@@ -81,7 +81,7 @@ npm run client
 ### 5. Access the Application
 
 - **Frontend**: [http://localhost:3000](http://localhost:3000)
-- **Backend API**: [http://localhost:5000](http://localhost:5000)
+- **Backend API**: [http://localhost:8080](http://localhost:8080)
 - **New Relic Dashboard**: [https://one.newrelic.com](https://one.newrelic.com)
 
 ## 🎮 Available Test Scenarios
@@ -230,15 +230,15 @@ FACET httpResponseCode SINCE 1 hour ago
 
 ### Port Already in Use?
 
-If port 5000 or 3000 is already in use:
+If port 8080 or 3000 is already in use:
 
 ```bash
 # Change backend port in .env
-PORT=5001
+PORT=8080
 
 # Change frontend proxy (if needed)
 # Edit client/package.json and add:
-"proxy": "http://localhost:5001"
+"proxy": "http://localhost:8080"
 ```
 
 ### SQLite Database Issues?
